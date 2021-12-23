@@ -8,7 +8,4 @@ form.addEventListener("submit", (e) => {
   alert(
     `name : ${name.value}\nemail : ${email.value}\nsubject : ${subject.value}\mmessage : ${msg.value}`
   );
-  console.log(
-    `name : ${name.value}\nemail : ${email.value}\nsubject : ${subject.value}\mmessage : ${msg.value}`
-  );
 });
