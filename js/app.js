@@ -6,6 +6,6 @@ form.addEventListener("submit", (e) => {
   const msg = document.getElementById("msg");
   e.preventDefault();
   alert(
-    `name : ${name.value}\nemail : ${email.value}\nsubject : ${subject.value}\mmessage : ${msg.value}`
+    `name : ${name.value}\nemail : ${email.value}\nsubject : ${subject.value}\nmessage : ${msg.value}`
   );
 });

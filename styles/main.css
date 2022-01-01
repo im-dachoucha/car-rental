@@ -192,6 +192,9 @@ h2 {
 
 /*? start of contact page styles */
 .contact-form {
+  background-color: rgba(32, 54, 107, 0.8);
+  padding: 10px;
+  border-radius: 10px;
   width: 90%;
   margin: 50px auto;
   display: flex;
@@ -201,15 +204,22 @@ h2 {
 }
 .data-input {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between;
+  align-items: center; */
+  flex-direction: column;
+  gap: 5px;
 }
 .contact-form label {
-  color: #20366b;
+  color: #eae3e3;
 }
 .contact-form input[type="submit"] {
   margin: auto;
   width: 20%;
+}
+.contact-form input[type="text"],
+.contact-form textarea {
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 /*? end of contact page styles */
 
@@ -287,9 +297,6 @@ h2 {
     justify-content: space-between;
     align-items: flex-start; */
     width: 30%;
-  }
-  .contact-form label {
-    color: #dd7777;
   }
   /*? end of contact page styles */
 }
