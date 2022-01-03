@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <script src="../js/app.js" defer></script> -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <script src="./js/main.js" defer></script>
+  <!-- <style>
+      #header {
+        height: unset !important;
+        background: unset !important;
+      }
+    </style> -->
+  <title>Home</title>
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+      <nav id="nav">
+        <h1 id="logo">RentMeNow</h1>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./reservation.html">Reservation</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <h1>Reservation</h1>
+      <form class="res-form">
+        <div class="data-input type">
+          <label>Start date</label>
+          <input type="date" name="startDate" id="sDate" >
+        </div>
+        <div class="data-input type">
+          <label>End date</label>
+          <input type="date" name="endDate" id="eDate" disabled>
+        </div>
+        <div class="data-input type">
+          <label>Type</label>
+          <select name="type">
+            <option value="" disabled selected>Select vehicule type</option>
+            <option value="moto">Moto</option>
+            <option value="citadine">Citadine</option>
+            <option value="compact">Compact</option>
+            <option value="berline">Berline</option>
+            <option value="utilitaire">Utilitaire</option>
+            <option value="engin">Construction machines</option>
+            <option value="truck">Truck</option>
+          </select>
+        </div>
+        <div class="data-input boite type notVisible">
+          <label>Greabox</label>
+          <select name="boite">
+            <option value="" disabled selected>Select gearbox type</option>
+            <option value="man">Manuelle</option>
+            <option value="auto">Automatique</option>
+          </select>
+        </div>
+        <div class="data-input carburant type notVisible">
+          <label>Fuel</label>
+          <select name="fuel">
+            <option value="" disabled selected>Select fuel type</option>
+            <option value="essence">Essence</option>
+            <option value="diesel">Diesel</option>
+            <option value="eletrique">Eletrique</option>
+            <option value="hybride">Hybride</option>
+        </div>
+        <input type="submit" value="Calculate total" disabled/>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="socials-footer">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p style="text-align: center">&copy;2021 DACHOUCHA Abderrahmane</p>
+    </footer>
+  </div>
+</body>
+
+</html>

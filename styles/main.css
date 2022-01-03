@@ -191,7 +191,8 @@ h2 {
 /*? end of home page styles */
 
 /*? start of contact page styles */
-.contact-form {
+.contact-form,
+.res-form {
   background-color: rgba(32, 54, 107, 0.8);
   padding: 10px;
   border-radius: 10px;
@@ -223,6 +224,29 @@ h2 {
 }
 /*? end of contact page styles */
 
+/*? start of gallery page styles */
+.item img {
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease;
+  /* width: 250px; */
+  /* height: 150px; */
+}
+.item img:hover {
+  transform: scale(0.98);
+  box-shadow: none;
+}
+/*? end of gallery page styles */
+
+/*? start of reservation page styles */
+.res-form * {
+  font-size: medium;
+}
+.notVisible {
+  display: none;
+}
+/*? end of reservation page styles */
+
 .footer {
   padding: 10px 20px;
   color: #eae3e3;
@@ -238,6 +262,8 @@ h2 {
 .fab {
   color: #dd7777;
 }
+
+/* ! media queries */
 
 @media screen and (min-width: 600px) {
   #header {
@@ -291,7 +317,8 @@ h2 {
   /*? end of home page styles */
 
   /*? start of contact page styles */
-  .contact-form {
+  .contact-form,
+  .res-form {
     /* flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -299,4 +326,24 @@ h2 {
     width: 30%;
   }
   /*? end of contact page styles */
+
+  /*? start of gallery page styles */
+  .gallery {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+  }
+  /*? end of gallery page styles */
+
+  /*? start of reservation page styles */
+  /* .res-form {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  } */
+  /*? end of reservation page styles */
 }
