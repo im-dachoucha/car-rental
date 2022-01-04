@@ -64,7 +64,7 @@ typeS.addEventListener("change", () => {
         <option value="diesel">Diesel</option>
         <option value="electric">Eletrique</option>
         <option value="hybrid">Hybride</option>`
-    } else if (selectedType === " compact") {
+    } else if (selectedType === "compact") {
       // ? compact
       initialPrice = 14
       boiteS.innerHTML = `<option value="man">Manual</option>`
